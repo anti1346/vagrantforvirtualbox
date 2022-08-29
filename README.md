@@ -217,6 +217,3 @@ vagrant destroy [VM]
 ```
 vagrant ssh [VM]
 ```
-멀티 VM인 경우 반드시 VM 이름을 명시
-
- anti1346    …/cccr-iac-2022     main                                                                                                            
