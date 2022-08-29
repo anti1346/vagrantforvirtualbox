@@ -1,6 +1,3 @@
-# vagrantforvirtualbox
-vagrant for virtualbox
-
 # Vagrant 설치 및 사용법
 [Vagrant 공식 사이트](https://www.vagrantup.com/)
 
