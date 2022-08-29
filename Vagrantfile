@@ -46,6 +46,18 @@ Vagrant.configure("2") do |config|
     end
   end
 
+  # CentOS
+  config.vm.define "#{$vm_name_prefix}-node3" do |node|
+    node.vm.box = "generic/centos8"
+    node.vm.provider "virtualbox" do |vm|
+      vm.name = "#{$vm_name_prefix}-node3"
+      vm.cpus = $vm_node_cpus
+      vm.memory = $vm_node_memory
+    end
+    node.vm.hostname = "#{$vm_name_prefix}-node3"
+    node.vm.network "private_network", ip: "192.168.56.23", nic_type: "virtio"
+  end
+  
   # Disable Synced Folder
   config.vm.synced_folder ".", "/vagrant", disabled: true
 
